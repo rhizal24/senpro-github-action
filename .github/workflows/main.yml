@@ -1,7 +1,7 @@
 name: Test, Build,and Deploy | Modul 01 - Lab2.2 Senior Project
 on:
   push:
-    branches: [main]
+    branches: [main, dev]
 
 jobs:
   test-build:
@@ -45,7 +45,7 @@ jobs:
             {
               echo "Repository belum di-clone. Cloning...";
               mkdir -p ~/senpro/514719/modul02;
-              cd ~/senpro/514719/modul02;
+              cd ~/senpro/514719/modul02; 
               git clone https://github.com/rhizal24/senpro-github-action.git;
               cd ~/senpro/514719/modul02/senpro-github-action;
               echo "Install Package dan Build Project";
