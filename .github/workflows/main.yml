@@ -16,7 +16,7 @@ jobs:
       - name: Testing Build pre-Deploy
         uses: actions/setup-node@v4
         with:
-          node-version: matrix.node-version
+          node-version: ${{matrix.node-version}}
           cache: "npm"
       - run: npm i
       - run: npm run build
